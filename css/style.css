@@ -40,12 +40,28 @@ body {
   color: #0b1c2c;
 }
 
-
-
-.swiper-pagination-bullet-active {
-  background-color: #112F5F !important;
+.menu li > *:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.menu li > *:hover {
+  background-color: transparent !important;
+  box-shadow: none;
 }
 
+/* nav item active state bg */
+.menu li > *:active,
+.menu li > *.menu-active,
+.menu li > details > summary:active {
+  background-color: #0d08090a !important;
+  box-shadow: none;
+}
+
+/* swiper pagination */
+.swiper-pagination-bullet-active {
+  background-color: #112f5f !important;
+}
+/* swiper slider */
 .mySwiper {
   padding-bottom: 12px;
 }
@@ -63,7 +79,7 @@ body {
   margin-top: 12px !important;
   text-align: center;
 }
-
+/* media query */
 @media (max-width: 767px) {
   .mySwiper {
     padding-bottom: 8px;
