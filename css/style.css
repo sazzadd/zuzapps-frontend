@@ -1,0 +1,90 @@
+body {
+  font-family: 'Switzer';
+}
+
+/* Custom Font */
+/* font Geist */
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+/* font Switzer */
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/Switzer-Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/Switzer-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('../assets/fonts/Switzer-Semibold.otf') format('opentype');
+  font-weight: 600;
+}
+/* helevtica Font */
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/Helvetica-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.navbar-start a {
+  font-family: 'Switzer', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0b1c2c;
+}
+
+
+
+.swiper-pagination-bullet-active {
+  background-color: #112F5F !important;
+}
+
+.mySwiper {
+  padding-bottom: 12px;
+}
+
+.mySwiper .swiper-wrapper {
+  align-items: flex-start;
+}
+
+.mySwiper .swiper-slide {
+  height: auto !important;
+}
+
+.mySwiper .swiper-pagination {
+  position: static !important;
+  margin-top: 12px !important;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .mySwiper {
+    padding-bottom: 8px;
+  }
+
+  .mySwiper .swiper-pagination {
+    margin-top: 8px !important;
+    transform: translateY(-50px);
+  }
+}
+
+/* image scroll slider  */
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+#sliderTrack {
+  animation: infiniteScroll 20s linear infinite;
+}
