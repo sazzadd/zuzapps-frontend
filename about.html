@@ -64,10 +64,10 @@
                 tabindex="-1"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Platfrom Overview</a></li>
-                <li><a>Industries</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="platfrom-overview.html">Platfrom Overview</a></li>
+                <li><a href="industries.html">Industries</a></li>
               </ul>
             </div>
             <a class="max-w-[109px]">
@@ -76,10 +76,10 @@
             <!-- desktop menu -->
             <div class="hidden lg:flex lg:ml-[64px]">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Platfrom Overview</a></li>
-                <li><a>Industries</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="platfrom-overview.html">Platfrom Overview</a></li>
+                <li><a href="industries.html">Industries</a></li>
               </ul>
             </div>
           </div>
@@ -139,14 +139,15 @@
         <div
           class="mx-auto flex max-w-[980px] flex-col items-center justify-center text-center"
         >
-          <!-- Subtitle -->
+          <!-- Title -->
+
           <p
-            class="mb-4 rounded-3xl border border-[#C7EBFD] bg-white/30 px-3 py-1 text-xs leading-[164%] text-[#3C3C3C] capitalize"
+            class="max-w-[92px] mb-4 rounded-3xl border border-[#C7EBFD] bg-white/30 px-3 py-1 text-xs leading-[164%] text-[#3C3C3C] capitalize"
           >
             About us
           </p>
+          <!-- Subtitle -->
 
-          <!-- Title -->
           <h1
             class="max-w-[920px] text-[24px] font-medium leading-[130%] text-[#11385F] capitalize sm:text-[40px] md:text-[52px] lg:text-[54px] xl:text-[48px]"
           >
@@ -269,12 +270,449 @@
         />
       </div>
     </section>
+    <!-- 
+      =====================
+        Our Mission Section
+      =====================
+           -->
+    <section class="w-full py-10 sm:py-12 md:py-[60px] lg:py-[70px]">
+      <div
+        class="mx-auto flex max-w-[1240px] flex-col items-center gap-10 px-5 text-center sm:px-6 md:gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-[80px] lg:text-left"
+      >
+        <!-- Content -->
+        <div
+          class="flex w-full flex-col items-center lg:max-w-[544px] lg:items-start"
+        >
+          <p
+            class="mb-4 inline-flex rounded-3xl border border-[#C7EBFD] bg-white/30 px-3 py-1 text-xs leading-[164%] text-[#3C3C3C] capitalize"
+          >
+            Our Mission
+          </p>
+
+          <h2
+            class="font-['Switzer'] max-w-[514px] text-[28px] font-medium leading-[140%] text-[#0B1C2C] capitalize sm:text-[32px] md:text-[34px] lg:text-[36px]"
+          >
+            Built For The Teams Who Refuse To Settle For Ordinary Growth.
+          </h2>
+
+          <div
+            class="mt-5 max-w-[544px] space-y-5 font-['Switzer'] text-[16px] font-normal leading-[164%] text-[#3C3C3C] sm:text-[17px] lg:text-[18px]"
+          >
+            <p>
+              We believe businesses can grow with a conscience and succeed with
+              a soul and they can do it with the help of software that puts the
+              customer first. That's why we build Zuapps: a CRM platform that
+              connects sales, service, marketing, and operations around a
+              single, honest view of every customer.
+            </p>
+
+            <p>
+              Our customers grow faster than the market average. They retain
+              more revenue. They make decisions with confidence. That's the work
+              and we measure ourselves against it every quarter.
+            </p>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="w-full lg:max-w-[608px]">
+          <img
+            src="./assets/images/misson.png"
+            class="h-auto w-full rounded-[12px] object-cover sm:rounded-[16px] lg:min-h-[520px] lg:rounded-[24px]"
+            alt="Our Mission"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- 
+      =====================
+       Our story Section
+      =====================
+           -->
+    <section class="w-full py-10 sm:py-12 md:py-[60px] lg:py-[70px]">
+      <div
+        class="mx-auto flex max-w-[1240px] flex-col items-center gap-10 px-5 text-center sm:px-6 md:gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-[80px] lg:text-left"
+      >
+        <!-- Image -->
+        <div class="order-2 w-full lg:order-1 lg:max-w-[608px]">
+          <img
+            src="./assets/images/our-story.png"
+            class="h-auto w-full rounded-[12px] object-cover sm:rounded-[16px] lg:min-h-[520px] lg:rounded-[24px]"
+            alt="Our Story"
+          />
+        </div>
+
+        <!-- Content -->
+        <div
+          class="order-1 flex w-full flex-col items-center lg:order-2 lg:max-w-[544px] lg:items-start"
+        >
+          <p
+            class="mb-4 inline-flex rounded-3xl border border-[#C7EBFD] bg-white/30 px-3 py-1 text-xs leading-[164%] text-[#3C3C3C] capitalize"
+          >
+            Our Story
+          </p>
+
+          <h2
+            class="font-['Switzer'] max-w-[372px] text-[28px] font-medium leading-[140%] text-[#0B1C2C] capitalize sm:text-[32px] md:text-[34px] lg:text-[36px]"
+          >
+            Two founders, one stubborn idea.
+          </h2>
+
+          <div
+            class="mt-5 max-w-[544px] space-y-5 font-['Switzer'] text-[16px] font-normal leading-[164%] text-[#3C3C3C] sm:text-[17px] lg:text-[18px]"
+          >
+            <p>
+              Zuapps started in a Lisbon apartment in 2019, when Aria and Mateo
+              got tired of watching their friends in sales wrestle with software
+              that treated them like data entry clerks. They believed the
+              relationship between a company and its customer deserved better
+              tools — calmer, kinder, more honest.
+            </p>
+
+            <p>
+              Six years on, that conviction hasn't moved. We're now 320+ people
+              across 14 offices, but every roadmap decision still starts the
+              same way: with a real customer story, not a sales target.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- 
       =====================
       Footer Section
       =====================
            -->
+
+    <section class="w-full px-5 py-10 sm:px-6 md:py-[60px] lg:py-[70px]">
+      <div class="mx-auto max-w-[1240px]">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-0">
+          <!-- Item 01 -->
+          <div
+            class="relative flex flex-col sm:px-6 items-center lg:items-start lg:justify-center"
+          >
+            <h3
+              class="font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+            >
+              1000+
+            </h3>
+
+            <p
+              class="mt-3 font-['Switzer'] text-[14px] font-normal leading-[164%] text-[#464646] sm:text-[15px] lg:text-[18px]"
+            >
+              Helped over 1000 businesses
+            </p>
+
+            <span
+              class="absolute right-0 top-1/2 hidden h-[64px] w-px -translate-y-1/2 bg-[#B7B7B7] sm:block"
+            ></span>
+          </div>
+
+          <!-- Item 02 -->
+          <div
+            class="relative flex flex-col items-center justify-center sm:px-6"
+          >
+            <h3
+              class="font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+            >
+              99.9%
+            </h3>
+
+            <p
+              class="mt-3 font-['Switzer'] text-[14px] font-normal leading-[164%] text-[#464646] sm:text-[15px] lg:text-[18px]"
+            >
+              Customer Satisfaction
+            </p>
+
+            <span
+              class="absolute right-0 top-1/2 hidden h-[64px] w-px -translate-y-1/2 bg-[#B7B7B7] sm:block"
+            ></span>
+          </div>
+
+          <!-- Item 03 -->
+          <div
+            class="flex flex-col items-center lg:items-end lg:justify-center sm:px-6"
+          >
+            <h3
+              class="font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+            >
+              24/7
+            </h3>
+
+            <p
+              class="mt-3 font-['Switzer'] text-[14px] font-normal leading-[164%] text-[#464646] sm:text-[15px] lg:text-[18px]"
+            >
+              Support Availability
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+        =====================================
+        Testimonial Swiper Slider section
+        =====================================
+      -->
+    <div
+      class="w-full mt-[60px] md:mt-14 lg:mt-[84px] lg:pb-[100px] pb-0 relative"
+    >
+      <!-- section title -->
+      <div class="max-w-[1241px] mx-auto px-6 flex items-center justify-center">
+        <h1
+          class="text-[28px] md:text-4xl lg:text-[54px] font-medium leading-[120%] lg:leading-[140%] capitalize text-center md:text-left"
+        >
+          What our customers are saying
+        </h1>
+      </div>
+
+      <!-- customer testimonials  slieder-->
+      <div
+        class="swiper mySwiper px-6 mt-10 lg:mt-[80px] md:mt-[60px] max-w-[1241px] mx-auto relative"
+      >
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div
+              class="px-6 flex flex-col items-center md:items-start md:flex-row md:justify-between md:gap-12"
+            >
+              <!-- left -->
+              <div class="order-2 md:order-1 mt-10 md:mt-0">
+                <img
+                  src="./assets/images/compant-logo.png"
+                  class="w-full max-w-[170px] lg:max-w-[226px] flex items-start md:mx-0"
+                />
+
+                <p class="max-w-[600px] text-base lg:text-[24px] mt-6 lg:mt-8">
+                  "Zuzapps completely transformed how we manage leads..."
+                </p>
+
+                <h5 class="mt-4">Jessica Lubahn</h5>
+                <p
+                  class="text-sm text-[#52525A] leading-[150%] tracking-[-0.2px] capitalize"
+                >
+                  Product Manager
+                </p>
+              </div>
+
+              <!-- right -->
+              <div class="order-1 md:order-2">
+                <img
+                  src="./assets/images/coustomer-img.png"
+                  class="w-full max-w-[400px] lg:rounded-[36px] rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div
+              class="px-6 flex flex-col items-center md:items-start md:flex-row md:justify-between md:gap-12"
+            >
+              <!-- left -->
+              <div class="order-2 md:order-1 mt-10 md:mt-0">
+                <img
+                  src="./assets/images/compant-logo.png"
+                  class="w-full max-w-[170px] lg:max-w-[226px] md:mx-0"
+                />
+
+                <p class="max-w-[600px] text-base lg:text-[24px] mt-6 lg:mt-8">
+                  "Zuzapps completely transformed how we manage leads..."
+                </p>
+
+                <h5 class="mt-4">Jessica Lubahn</h5>
+                <p class="text-sm text-gray-500">Product Manager</p>
+              </div>
+
+              <!-- right -->
+              <div class="order-1 md:order-2">
+                <img
+                  src="./assets/images/coustomer-img.png"
+                  class="w-full max-w-[400px] lg:rounded-[36px] rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div
+              class="px-6 flex flex-col items-center md:items-start md:flex-row md:justify-between md:gap-12"
+            >
+              <!-- left -->
+              <div class="order-2 md:order-1 mt-10 md:mt-0">
+                <img
+                  src="./assets/images/compant-logo.png"
+                  class="w-full max-w-[170px] lg:max-w-[226px] md:mx-0"
+                />
+
+                <p class="max-w-[600px] text-base lg:text-[24px] mt-6 lg:mt-8">
+                  "Zuzapps completely transformed how we manage leads..."
+                </p>
+
+                <h5 class="mt-4">Jessica Lubahn</h5>
+                <p class="text-sm text-gray-500">Product Manager</p>
+              </div>
+
+              <!-- right -->
+              <div class="order-1 md:order-2">
+                <img
+                  src="./assets/images/coustomer-img.png"
+                  class="w-full max-w-[400px] lg:rounded-[36px] rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div
+          class="swiper-pagination !relative !bottom-auto !left-[0] ml-[0px] lg:ml-[24px] !mt-[40px] text-center lg:!absolute lg:!bottom-0 lg:!left-0 lg:!mt-0 lg:!text-left"
+        ></div>
+      </div>
+    </div>
+    <!-- 
+      =====================
+      Resources Section
+      =====================
+           -->
+    <section
+      class="w-full py-10 sm:py-12 md:py-[60px] lg:py-[100px] bg-[#F3FBFF] px-5 sm:px-6"
+    >
+      <!-- title description -->
+      <div class="flex items-center flex-col">
+        <h1
+          class="text-[28px] md:text-4xl text-[#112F5F] lg:text-[54px] font-medium leading-[120%] lg:leading-[140%] capitalize text-center"
+        >
+          Resources
+        </h1>
+        <p
+          class="max-w-[546px] mx-auto md:mx-0 text-base lg:text-lg mb-6 text-[#112F5F] leading-[150%] lg:leading-[140%] text-center mt-[10px]"
+        >
+          Compose any sales process with stages, conditional branches, and
+          automation hooks. Drag, drop, ship no engineer needed.
+        </p>
+      </div>
+
+      <div
+        class="max-w-[1241px] lg:mt-10 mx-auto grid grid-cols-1 gap-6 sm:px-6 md:grid-cols-3 lg:grid-cols-3 lg:gap-[34px]"
+      >
+        <!-- Item 01 -->
+        <div
+          class="flex flex-col rounded-[12px] bg-white lg:rounded-[16px] lg:pt-[70px] pt-6 lg:px-[24px] px-5 pb-[24px]"
+        >
+          <img
+            src="./assets/images/r1.png"
+            class="w-full h-auto object-contain"
+            alt="Resource 1"
+          />
+
+          <h3
+            class="mt-5 lg:mt-[34px] text-[18px] font-bold leading-[140%] text-[#0B1C2C] capitalize"
+          >
+            Investor Relations
+          </h3>
+
+          <p
+            class="mt-2 text-sm leading-[164%] text-[#3C3C3C] sm:text-base lg:text-[18px]"
+          >
+            Financials, governance documents, and the latest reports for our
+            shareholders.
+          </p>
+        </div>
+        <!-- Item 02 -->
+        <div
+          class="flex flex-col rounded-[12px] bg-white lg:rounded-[16px] lg:pt-[70px] pt-6 lg:px-[24px] px-5 pb-[24px]"
+        >
+          <img
+            src="./assets/images/r2.png"
+            class="w-full h-auto object-contain"
+            alt="Resource 2"
+          />
+
+          <h3
+            class="mt-5 lg:mt-[34px] text-[18px] font-bold leading-[140%] text-[#0B1C2C] capitalize"
+          >
+            Zuapps Company News
+          </h3>
+
+          <p
+            class="mt-2 text-sm leading-[164%] text-[#3C3C3C] sm:text-base lg:text-[18px]"
+          >
+            Press releases, product launches, and milestones from across the
+            company.
+          </p>
+        </div>
+        <!-- Item 03 -->
+        <div
+          class="flex flex-col rounded-[12px] bg-white lg:rounded-[16px] lg:pt-[70px] pt-6 lg:px-[24px] px-5 pb-[24px]"
+        >
+          <img
+            src="./assets/images/r3.png"
+            class="w-full h-auto object-contain"
+            alt="Resource 3"
+          />
+
+          <h3
+            class="mt-5 lg:mt-[34px] text-[18px] font-bold leading-[140%] text-[#0B1C2C] capitalize"
+          >
+            Investor Relations
+          </h3>
+
+          <p
+            class="mt-2 text-sm leading-[164%] text-[#3C3C3C] sm:text-base lg:text-[18px]"
+          >
+            Financials, governance documents, and the latest reports for our
+            shareholders.
+          </p>
+        </div>
+      </div>
+
+      <!-- Item 03 -->
+    </section>
+    <!-- 
+      =====================
+       start managing Section
+      =====================
+           -->
+    <section class="w-full pt-[100px] lg:pt-[100px] md:pt-[60px] px-6">
+      <div
+        class="mx-auto max-w-[1240px] bg-gradient-to-b from-[#C7EBFD] rounded-t-[34px] to-white flex flex-col items-center gap-10 px-5 py-10 sm:px-6 md:py-[60px] lg:py-[70px] text-center"
+      >
+        <h2
+          class="font-['Switzer'] w-full lg:max-w-[1240px] text-[28px] font-medium leading-[140%] text-[#0B1C2C] capitalize sm:text-[32px] md:text-[34px] lg:text-[36px]"
+        >
+          Start managing task better
+        </h2>
+
+        <!-- buttons  Group-->
+        <div
+          class="flex gap-4 flex-col lg:flex-row items-center w-full justify-center"
+        >
+          <a
+            href=""
+            class="md:flex-none text-center w-full md:w-auto py-3 px-6 border bg-[#112F5F] text-white border-[#0B1C2C] rounded-[16px] hover:bg-[#143757] transition-all duration-300"
+            >Get Started For Free</a
+          >
+          <a
+            href=""
+            class="md:flex-none text-center py-3 w-full md:w-auto px-6 rounded-[16px] border border-[#112F5F] hover:bg-[#143757] hover:text-white transition-all duration-300"
+            >Get a Demo</a
+          >
+        </div>
+        <img
+          src="./assets/images/managing.png"
+          alt="Managing tasks"
+          class="w-full lg:max-w-[1080px] h-auto object-cover lg:rounded-[24px] rounded-[12px] mt-10"
+        />
+      </div>
+    </section>
+    <!-- 
+      =====================
+      Footer Section
+      =====================
+           -->
+
     <footer class="bg-[#0B1C2C] lg:py-[64px] py-[40px] px-6">
       <div
         class="max-w-[1241px] pb-[48px] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] gap-10 lg:gap-[80px] border-b-1 border-[#EBEBEB]"
