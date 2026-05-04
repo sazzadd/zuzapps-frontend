@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- site meta -->
+    <meta
+      name="description"
+      content="Zuzapps - Your trusted technology partner for innovative solutions."
+    />
+    <!-- site title -->
+    <title>Zuzapps</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--  Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header id="header" class="w-full z-[999] sticky top-0 bg-white">
+      <div class="max-w-[1240px] mx-auto px-6">
+        <div class="navbar">
+          <!--  Mobile menu  -->
+          <div class="navbar-start">
+            <!-- Mobile menu dropdown items -->
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="platfrom-overview.html">Platfrom Overview</a></li>
+                <li><a href="industries.html">Industries</a></li>
+              </ul>
+            </div>
+            <a class="max-w-[109px]">
+              <img src="./assets/images/logo.png" alt="Logo" />
+            </a>
+            <!-- desktop menu -->
+            <div class="hidden lg:flex lg:ml-[64px]">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="platfrom-overview.html">Platfrom Overview</a></li>
+                <li><a href="industries.html">Industries</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex"></div>
+          <div class="navbar-end flex gap-2">
+            <div class="relative inline-block group">
+              <!--Language Button -->
+              <a
+                class="py-2 px-3 md:py-3 md:px-4 border border-[#0B1C2C] rounded-[16px] flex items-center gap-1 cursor-pointer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                >
+                  <path
+                    d="M9.08333 0.75C11.1677 3.03196 12.3523 5.99336 12.4167 9.08333C12.3523 12.1733 11.1677 15.1347 9.08333 17.4167M9.08333 0.75C6.99893 3.03196 5.81437 5.99336 5.75 9.08333C5.81437 12.1733 6.99893 15.1347 9.08333 17.4167M9.08333 0.75C4.48096 0.75 0.75 4.48096 0.75 9.08333C0.75 13.6857 4.48096 17.4167 9.08333 17.4167M9.08333 0.75C13.6857 0.75 17.4167 4.48096 17.4167 9.08333C17.4167 13.6857 13.6857 17.4167 9.08333 17.4167M1.16668 6.58333H17M1.16667 11.5833H17"
+                    stroke="#0B1C2C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Eng
+              </a>
+
+              <!-- Dropdown -->
+              <div
+                class="absolute left-0 mt-2 w-full bg-white border border-gray-200 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300"
+              >
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                  >English</a
+                >
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Bangla</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Arabic</a>
+              </div>
+            </div>
+
+            <!--Get Started For Free Button -->
+            <a
+              href=""
+              class="hidden md:inline-block py-2 px-3 md:py-3 md:px-4 border bg-[#0B1C2C] text-white border-[#0B1C2C] rounded-[16px] hover:bg-[#143757] transition-all duration-300"
+              >Get Started For Free</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header  End -->
+
+    <!-- 
+        ====================================
+       Hero /Banner Section Start
+        ==================================== 
+      -->
+    <section class="w-full bg-[#EAF8FF] relative">
+      <div
+        class="max-w-[1240px] pt-[40px] lg:pt-[54px] mx-auto px-6 flex flex-col items-center"
+      >
+        <!-- title  -->
+        <p
+          class="text-xs text-[#3C3C3C] bg-[#FFFFFF4D] leading-[164%] border rounded-3xl px-3 py-1 border-[#C7EBFD] capitalize mb-4"
+        >
+          New Pipeline AI is now live
+        </p>
+        <!--sub title  -->
+        <h1
+          class="text-center text-[32px] md:text-5xl lg:text-[72px] xl:text-[84px] font-medium text-[#11385F] leading-[120%] lg:leading-[130%]"
+        >
+          A CRM that fits the way
+
+          <br class="hidden sm:block" />
+          <span class="text-[#70B4DC]"> your industry works.</span>
+        </h1>
+        <!-- description -->
+        <p
+          class="max-w-[582px] text-center text-lg text-[#3C3C3C] mt-6 mb-10 leading-[164%] lg:leading-[150%]"
+        >
+          Same platform, opinionated playbooks. Pick the industry that looks
+          most
+          <br class="hidden sm:block" />
+          like yours and see Zuapps already configured for it.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="w-full lg:max-w-[1241px] px-6 mx-auto mt-[60px] md:mt-14 lg:mt-[80px] pb-0"
+    >
+      <!-- cards grid -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 *:lg:grid-cols-3 lg:gap-[30px] gap-6"
+      >
+        <!-- card 1  flex flex-col items-center-->
+        <div
+          class="border border-[#F3F3F3] rounded-[24px] p-6 shadow-[0px_12px_24px_-4px_#919EAB1F,0px_0px_2px_0px_#919EAB33]"
+        >
+          <!-- icon -->
+          <div class="icon">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V48C64 56.8366 56.8366 64 48 64H16C7.16344 64 0 56.8366 0 48V16Z"
+                fill="#1A4136"
+              />
+              <path
+                d="M24 45.3334V21.3334C24 20.6261 24.281 19.9478 24.781 19.4477C25.2811 18.9476 25.9594 18.6667 26.6667 18.6667H37.3333C38.0406 18.6667 38.7189 18.9476 39.219 19.4477C39.719 19.9478 40 20.6261 40 21.3334V45.3334H24Z"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.0003 32H21.3337C20.6264 32 19.9481 32.281 19.448 32.781C18.9479 33.2811 18.667 33.9594 18.667 34.6667V42.6667C18.667 43.3739 18.9479 44.0522 19.448 44.5523C19.9481 45.0524 20.6264 45.3333 21.3337 45.3333H24.0003"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M40 28H42.6667C43.3739 28 44.0522 28.281 44.5523 28.781C45.0524 29.2811 45.3333 29.9594 45.3333 30.6667V42.6667C45.3333 43.3739 45.0524 44.0522 44.5523 44.5523C44.0522 45.0524 43.3739 45.3333 42.6667 45.3333H40"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 24H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 29.3333H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 34.6667H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 40H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <!-- title -->
+          <h3
+            class="text-[22px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-[20px] md:mt-[20px] lg:mt-[20px] text-[#141414] font-medium leading-[120%] lg:leading-[140%] capitalize"
+          >
+            Customer Database
+          </h3>
+          <!-- description -->
+          <p
+            class="max-w-[582px] text-lg text-[#3C3C3C] mt-[10px] mb-10 leading-[164%] lg:leading-[150%]"
+          >
+            Same platform, opinionated playbooks. Pick the industry that looks
+            most
+            <br class="hidden sm:block" />
+            like yours and see Zuapps already configured for it.
+          </p>
+          <!-- list -->
+          <ul
+            class="list-disc pl-6 mt-6 space-y-1 text-[#3C3C3C] lg:mb-[80px] md:mb-[40px] mb-[20px]"
+          >
+            <li>Guest Management</li>
+            <li>Booking Systems</li>
+            <li>Service Trackingt</li>
+          </ul>
+        </div>
+        <div
+          class="border border-[#F3F3F3] rounded-[24px] p-6 shadow-[0px_12px_24px_-4px_#919EAB1F,0px_0px_2px_0px_#919EAB33]"
+        >
+          <!-- icon -->
+          <div class="icon">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V48C64 56.8366 56.8366 64 48 64H16C7.16344 64 0 56.8366 0 48V16Z"
+                fill="#1A4136"
+              />
+              <path
+                d="M24 45.3334V21.3334C24 20.6261 24.281 19.9478 24.781 19.4477C25.2811 18.9476 25.9594 18.6667 26.6667 18.6667H37.3333C38.0406 18.6667 38.7189 18.9476 39.219 19.4477C39.719 19.9478 40 20.6261 40 21.3334V45.3334H24Z"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.0003 32H21.3337C20.6264 32 19.9481 32.281 19.448 32.781C18.9479 33.2811 18.667 33.9594 18.667 34.6667V42.6667C18.667 43.3739 18.9479 44.0522 19.448 44.5523C19.9481 45.0524 20.6264 45.3333 21.3337 45.3333H24.0003"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M40 28H42.6667C43.3739 28 44.0522 28.281 44.5523 28.781C45.0524 29.2811 45.3333 29.9594 45.3333 30.6667V42.6667C45.3333 43.3739 45.0524 44.0522 44.5523 44.5523C44.0522 45.0524 43.3739 45.3333 42.6667 45.3333H40"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 24H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 29.3333H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 34.6667H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 40H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <!-- title -->
+          <h3
+            class="text-[22px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-[20px] md:mt-[20px] lg:mt-[20px] text-[#141414] font-medium leading-[120%] lg:leading-[140%] capitalize"
+          >
+            Customer Database
+          </h3>
+          <!-- description -->
+          <p
+            class="max-w-[582px] text-lg text-[#3C3C3C] mt-[10px] mb-10 leading-[164%] lg:leading-[150%]"
+          >
+            Same platform, opinionated playbooks. Pick the industry that looks
+            most
+            <br class="hidden sm:block" />
+            like yours and see Zuapps already configured for it.
+          </p>
+          <!-- list -->
+          <ul
+            class="list-disc pl-6 mt-6 space-y-1 text-[#3C3C3C] lg:mb-[80px] md:mb-[40px] mb-[20px]"
+          >
+            <li>Guest Management</li>
+            <li>Booking Systems</li>
+            <li>Service Trackingt</li>
+          </ul>
+        </div>
+        <div
+          class="border border-[#F3F3F3] rounded-[24px] p-6 shadow-[0px_12px_24px_-4px_#919EAB1F,0px_0px_2px_0px_#919EAB33]"
+        >
+          <!-- icon -->
+          <div class="icon">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 16C0 7.16344 7.16344 0 16 0H48C56.8366 0 64 7.16344 64 16V48C64 56.8366 56.8366 64 48 64H16C7.16344 64 0 56.8366 0 48V16Z"
+                fill="#1A4136"
+              />
+              <path
+                d="M24 45.3334V21.3334C24 20.6261 24.281 19.9478 24.781 19.4477C25.2811 18.9476 25.9594 18.6667 26.6667 18.6667H37.3333C38.0406 18.6667 38.7189 18.9476 39.219 19.4477C39.719 19.9478 40 20.6261 40 21.3334V45.3334H24Z"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.0003 32H21.3337C20.6264 32 19.9481 32.281 19.448 32.781C18.9479 33.2811 18.667 33.9594 18.667 34.6667V42.6667C18.667 43.3739 18.9479 44.0522 19.448 44.5523C19.9481 45.0524 20.6264 45.3333 21.3337 45.3333H24.0003"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M40 28H42.6667C43.3739 28 44.0522 28.281 44.5523 28.781C45.0524 29.2811 45.3333 29.9594 45.3333 30.6667V42.6667C45.3333 43.3739 45.0524 44.0522 44.5523 44.5523C44.0522 45.0524 43.3739 45.3333 42.6667 45.3333H40"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 24H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 29.3333H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 34.6667H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M29.333 40H34.6663"
+                stroke="#F1FFF1"
+                stroke-width="2.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <!-- title -->
+          <h3
+            class="text-[22px] sm:text-[20px] md:text-[22px] lg:text-[24px] mt-[20px] md:mt-[20px] lg:mt-[20px] text-[#141414] font-medium leading-[120%] lg:leading-[140%] capitalize"
+          >
+            Customer Database
+          </h3>
+          <!-- description -->
+          <p
+            class="max-w-[582px] text-lg text-[#3C3C3C] mt-[10px] mb-10 leading-[164%] lg:leading-[150%]"
+          >
+            Same platform, opinionated playbooks. Pick the industry that looks
+            most
+            <br class="hidden sm:block" />
+            like yours and see Zuapps already configured for it.
+          </p>
+          <!-- list -->
+          <ul
+            class="list-disc pl-6 mt-6 space-y-1 text-[#3C3C3C] lg:mb-[80px] md:mb-[40px] mb-[20px]"
+          >
+            <li>Guest Management</li>
+            <li>Booking Systems</li>
+            <li>Service Trackingt</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      =====================
+      Footer Section
+      =====================
+           -->
+    <footer class="bg-[#0B1C2C] lg:py-[64px] py-[40px] px-6">
+      <div
+        class="max-w-[1241px] pb-[48px] mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-[1.8fr_1fr_1fr_1fr_1fr] gap-10 lg:gap-[80px] border-b-1 border-[#EBEBEB]"
+      >
+        <!-- brand info -->
+        <div
+          class="col-span-2 md:col-span-4 lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left"
+        >
+          <h2
+            class="!font-['Helvetica'] text-[18px] font-bold leading-[28px] text-white"
+          >
+            Zuzapps
+          </h2>
+
+          <p
+            class="!font-['Helvetica'] max-w-[216px] text-[14px] font-normal leading-[164%] text-white/90 mt-3"
+          >
+            The CRM that adapts to your industry. Start free, scale fast.
+          </p>
+        </div>
+
+        <!-- industry -->
+        <div>
+          <h3
+            class="!font-['Helvetica'] text-[16px] font-bold leading-[164%] text-white mb-3"
+          >
+            Industry
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Logistics</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Real Estate</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Medical Supply</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Manufacturing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Law Firms</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- platform -->
+        <div>
+          <h3
+            class="!font-['Helvetica'] text-[16px] font-bold leading-[164%] text-white mb-3"
+          >
+            Platform
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Integrations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Security</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- company -->
+        <div>
+          <h3
+            class="!font-['Helvetica'] text-[16px] font-bold leading-[164%] text-white mb-3"
+          >
+            Company
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- resources -->
+        <div>
+          <h3
+            class="!font-['Helvetica'] text-[16px] font-bold leading-[164%] text-white mb-3"
+          >
+            Resources
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >API Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Webinars</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Case Studies</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="max-w-[1241px] pt-[32px] mx-auto flex flex-col md:flex-row lg:flex-row items-center justify-between"
+      >
+        <p
+          class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85"
+        >
+          © <span id="currentYear"></span> Zuzapps Inc. All rights reserved.
+        </p>
+        <div>
+          <ul class="flex gap-4">
+            <li>
+              <a
+                href=""
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="!font-['Helvetica'] text-[14px] font-normal leading-[164%] text-white/85 hover:text-white transition-colors duration-300"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Tailwind Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!--script  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
