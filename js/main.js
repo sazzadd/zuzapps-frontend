@@ -13,7 +13,6 @@ function infiniteImgSlider() {
   // track.style.animationDuration = duration + 's';
 }
 
-
 // Swiper Slider Initialization
 
 const sliderFunction = () => {
@@ -50,8 +49,44 @@ function setCurrentYear() {
   }
 }
 
+// Counter animation function
+function startCounterAnimation() {
+  // Select all counter number elements
+  document.querySelectorAll('.counter-number').forEach((el) => {
+    // Get target number from data-target
+    let target = Number(el.dataset.target);
+
+    // Get suffix like +, %, /7
+    let suffix = el.dataset.suffix || '';
+
+    // Get decimal value if needed
+    let decimal = Number(el.dataset.decimal) || 0;
+
+    // Counter starts from 0
+    let count = 0;
+
+    // Animation speed
+    let speed = target / 80;
+
+    // Run counter animation
+    let counter = setInterval(() => {
+      count += speed;
+
+      // Stop counter when it reaches target
+      if (count >= target) {
+        count = target;
+        clearInterval(counter);
+      }
+
+      // Update text content
+      el.textContent = count.toFixed(decimal) + suffix;
+    }, 20);
+  });
+}
+
 // Initialize functions
 
 infiniteImgSlider();
 sliderFunction();
 setCurrentYear();
+startCounterAnimation();

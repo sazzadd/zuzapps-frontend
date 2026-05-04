@@ -381,11 +381,14 @@
 
     <!-- 
       =====================
-      Footer Section
+      Counter Section
       =====================
            -->
 
-    <section class="w-full px-5 py-10 sm:px-6 md:py-[60px] lg:py-[70px]">
+    <section
+      id="counter"
+      class="w-full px-5 py-10 sm:px-6 md:py-[60px] lg:py-[70px]"
+    >
       <div class="mx-auto max-w-[1240px]">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-0">
           <!-- Item 01 -->
@@ -393,9 +396,12 @@
             class="relative flex flex-col sm:px-6 items-center lg:items-start lg:justify-center"
           >
             <h3
-              class="font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+              class="counter-number font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+              data-target="1000"
+              data-suffix="+"
+              data-decimals="0"
             >
-              1000+
+              0+
             </h3>
 
             <p
@@ -414,9 +420,12 @@
             class="relative flex flex-col items-center justify-center sm:px-6"
           >
             <h3
-              class="font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+              class="counter-number font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+              data-target="99.9"
+              data-suffix="%"
+              data-decimals="1"
             >
-              99.9%
+              0%
             </h3>
 
             <p
@@ -435,9 +444,12 @@
             class="flex flex-col items-center lg:items-end lg:justify-center sm:px-6"
           >
             <h3
-              class="font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+              class="counter-number font-['Switzer'] text-[36px] font-medium leading-[140%] text-[#112F5F] capitalize sm:text-[42px] md:text-[48px] lg:text-[54px]"
+              data-target="24"
+              data-suffix="/7"
+              data-decimals="0"
             >
-              24/7
+              0/7
             </h3>
 
             <p
@@ -454,7 +466,7 @@
         Testimonial Swiper Slider section
         =====================================
       -->
-    <div
+    <section
       class="w-full mt-[60px] md:mt-14 lg:mt-[84px] lg:pb-[100px] pb-0 relative"
     >
       <!-- section title -->
@@ -570,7 +582,7 @@
           class="swiper-pagination !relative !bottom-auto !left-[0] ml-[0px] lg:ml-[24px] !mt-[40px] text-center lg:!absolute lg:!bottom-0 lg:!left-0 lg:!mt-0 lg:!text-left"
         ></div>
       </div>
-    </div>
+    </section>
     <!-- 
       =====================
       Resources Section
