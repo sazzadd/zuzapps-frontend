@@ -1,5 +1,7 @@
 # Zuzapps Website
 
+Preview Live URL: https://sazzadd.github.io/zuzapps-frontend/
+
 Zuzapps is a modern CRM landing page website designed and developed for a Fiverr client project. The website presents Zuzapps as a smart CRM platform that helps teams manage relationships, automate workflows, track pipelines, and improve business operations from one clean workspace.
 
 ## Project Overview
